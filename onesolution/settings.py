@@ -24,7 +24,6 @@ SECRET_KEY = 'yt147!*xb0--0%$y*j=q1pd$&iz8^p9c!==v-)kn+h64b2$1tb'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
 ALLOWED_HOSTS = ['*']
 
 
