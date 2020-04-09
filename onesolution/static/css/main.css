@@ -1,0 +1,161 @@
+body{
+    background: #6D6027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #804c16, #6D6027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #656874, #7d735e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#cctv-img{
+	background: url(../img/cctv2.jpg);
+	background-size: cover;
+}
+#hvac-img{
+	background: url(../img/hvac.jpg);
+	background-size: cover;
+}
+#auto-img{
+	background: url(../img/auto.jpg);
+	background-size: cover;
+}
+
+.carousel-item{
+
+}
+/*Centrado de display*/
+.row{
+	display: flex;
+  	justify-content: center;
+  	text-align: center;
+}
+.col-lg-4{
+	padding: 20px;
+}
+h1{
+	text-align: center;
+}
+h2, p{
+	color: white;
+	font-family: font-family: 'Quicksand', sans-serif;
+	src:	url(https://fonts.googleapis.com/css?family=Quicksand&display=swap);
+	padding: 30px;
+}
+
+li{
+	color: white;
+}
+.facilidades{
+	font-family: 'Libre Baskerville', serif;
+	src: url(https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap);
+	text-align: center;
+	font-size: 30pt;
+}
+
+.btn-slide{
+position: relative /* o absolute*/;
+top: 12px;
+right:12px;
+width:120px;
+z-index:99;
+}
+
+
+.main-content{
+	background-color: blue;
+	width: 100vh;
+}
+
+
+.row{
+	align-content: center;
+}
+.main-title{
+
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.servicios{
+	font-family: 'Passion One', cursive;
+	src:url(https://fonts.googleapis.com/css?family=Passion+One:700&display=swap);
+	font-size: 50pt;
+	text-align: center;
+}
+
+
+
+
+.col-lg-4{
+	background-color: blue;
+}
+
+
+
+
+
+
+
+
+/*
+.service{
+  box-sizing: border-box;
+  background-color:#2196F3;
+  display: inline-block;
+  width:30%;
+  height: 200px;
+  margin: 10px;
+}
+#medium{
+
+}
+*/
+
+
+
+@media screen and (max-width:800px){
+  .service {		/* Listado de servcios en móvil	 */
+    width:100%; 
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.title-cctv, .title-hvac, .title-auto{
+
+	font-size: 25pt;
+	text-align: center;
+}
+
+.txt-cctv, ul{
+
+	font-size: 15pt;
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+
+.txt-hvac{
+
+	font-size: 15pt;
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+
+.easy-title{
+	text-align: center;
+}
+.fac{
+	display: inline-flex;
+	padding: 0px;
+	margin: 0px;
+}
+

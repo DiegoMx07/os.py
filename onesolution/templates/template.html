@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<!-- BOOSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<head>
+	<title>
+		
+		{% block title %} {% endblock %}
+
+	</title>
+</head>
+
+	{% include 'navbar.html' %}
+
+<body>
+
+	<!-- <h1 style="background-color:blue; color: white; text-align: center;">One Solution</h1> -->
+
+	{% block content %} {% endblock %}
+
+</body>
+
+	{% include 'footer.html' %}
+
+
+</html>
