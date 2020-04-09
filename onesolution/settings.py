@@ -25,7 +25,7 @@ SECRET_KEY = 'yt147!*xb0--0%$y*j=q1pd$&iz8^p9c!==v-)kn+h64b2$1tb'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -47,6 +47,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
 ROOT_URLCONF = 'onesolution.urls'
@@ -54,7 +55,7 @@ ROOT_URLCONF = 'onesolution.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:/OneSolutionDjango/OneSolutionDjango/templates/'],
+        'DIRS': ['C:/projects/onesolution-project/onesolution/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -80,6 +81,15 @@ DATABASES = {
     }
 }
 
+"""import dj_database_url
+ from decouple import config
+
+DATABASES = {
+    
+    'default': dj_database_url.config(
+        default=config('DATABASE_URL')
+        )
+}"""
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -119,5 +129,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    ("static", "C:/OneSolutionDjango/OneSolutionDjango/static"),
+    ("static", "C:/projects/onesolution-project/onesolution/static"),
 ]
+
+#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
